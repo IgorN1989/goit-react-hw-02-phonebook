@@ -18,8 +18,6 @@ export class App extends Component {
   state = {
     contacts: initialContacts,
     filter: '',
-    name: '',
-    number: '',
   };
 
   changeFilter = newFilter => {
