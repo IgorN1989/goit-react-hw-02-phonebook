@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
-export const ContactListContainer = styled.ul`
-  outline: 2px solid purple;
+export const List = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: ${p => p.theme.spacing(2)};
+  padding-top: ${p => p.theme.spacing(2)};
 `;

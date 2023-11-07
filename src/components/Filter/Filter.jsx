@@ -1,10 +1,10 @@
-import { FilterContainer } from './Filter.styled';
+import { FilterContainer, FilterLabel, FilterInput } from './Filter.styled';
 
 export const Filter = ({ filter, onChangeFilter }) => (
   <FilterContainer>
-    <label htmlFor="filter">
+    <FilterLabel htmlFor="filter">
       Find contact by name
-      <input
+      <FilterInput
         type="text"
         name="filter"
         value={filter}
@@ -12,7 +12,7 @@ export const Filter = ({ filter, onChangeFilter }) => (
         onChange={e => {
           onChangeFilter(e.target.value);
         }}
-      ></input>
-    </label>
+      ></FilterInput>
+    </FilterLabel>
   </FilterContainer>
 );
